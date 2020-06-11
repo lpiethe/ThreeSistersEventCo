@@ -1,38 +1,38 @@
 .App {
   text-align: center;
+  background-image: url('./images/cakephoto.jpg');
+  width: 100%;
+  height: 900px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Great Vibes';
+  src: local('GreatVibes'), url(./fonts/GreatVibes-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'LexendTera';
+  src: local('LexendTera'), url(./fonts/LexendTera-Regular.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  font-family: 'Great Vibes';
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 10vh;
+  background-color: rgb(116, 138, 128);
+  height: 30%;
+}
+
+li{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   color: white;
+  list-style: none;
+  font-family: 'LexendTera';
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

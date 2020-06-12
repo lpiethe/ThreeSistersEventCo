@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-  background-image: url('./images/cakephoto.jpg');
-  width: 100%;
-  height: 900px;
 }
 
 @font-face {
@@ -34,5 +31,79 @@ li{
   font-family: 'LexendTera';
 }
 
+Form{
+  margin: auto;
+  margin-top: 70px;
+  padding:10px;
+  background-color: white;
+  opacity:0.8;
+  text-align: center;
+  font-family: 'LexendTera';
+}
 
+.home{
+  background-image: url('./images/cakephoto.jpg');
+  width: 100%;
+  height: 900px;
+}
+
+.contact{
+  background-image: url('./images/placeSetting.jpeg');
+  width: 100%;
+  height: 900px;
+}
+
+.FadeItems {
+  animation: fadeInAnimation ease 2s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 
+
+.site-footer {
+  background-color:  white;
+  padding: 20px;
+  width: 100%;
+  color: black;
+}
+.site-footer a {
+  color:rgb(116, 138, 128);
+}
+.footerlink {
+  color:rgb(116, 138, 128);
+  font-family: Montserrat-Regular;
+}
+
+.garden {
+  background-image: url('./images/longTable.png');
+  width: auto;
+  height: 500px;
+  font-family: 'Great Vibes';
+  padding-top: 30px;
+  margin-top: 50px;
+
+}
+.babyShower {
+    background-image: url('./images/babyBoyShower.png');
+    width: auto;
+   height: 500px;
+    font-family: 'Great Vibes';
+    padding-top: 30px;
+    margin-top: 50px;
+}
+.bridal {
+  background-image: url('./images/weddingShower.png');
+  width: auto;
+ height: 500px;
+  font-family: 'Great Vibes';
+  padding-top: 30px;
+  margin-top: 50px;
+}
 

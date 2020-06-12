@@ -14,11 +14,10 @@ class Home extends Component {
     render() {
         return(
             <React.Fragment>
-           
+           <div className="home FadeItems">
             {/* <img width='100%' src={require('../images/cakephoto.jpg')} alt="cake" />  */}
            
-            <Container>    
-            </Container>
+            </div>
             </React.Fragment>
         );
     }

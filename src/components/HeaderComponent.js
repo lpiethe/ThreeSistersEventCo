@@ -30,7 +30,7 @@ class Header extends Component {
                     <Link to="Services">
                         <li>Services</li>
                     </Link>
-                    <Link to="About">
+                    <Link to="Contact">
                         <li>Contact</li>
                     </Link>
                     </div>

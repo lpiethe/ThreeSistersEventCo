@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../fonts/HomemadeApple-Regular.ttf';
@@ -34,7 +35,7 @@ class Main extends Component {
                 <Route exact path="/" component={HomePage}/> 
                     </Switch>
                 
-          
+          <Footer/>
             </div>
             </Router>
         );

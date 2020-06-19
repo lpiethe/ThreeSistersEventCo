@@ -6,12 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../fonts/HomemadeApple-Regular.ttf';
 // import '../fonts/Montserrat-ExtraLight.ttf';
 import '../App.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import About from './AboutComponent';
 import Work from './OurWorkComponent';
 import Home from './HomeComponent';
 import Services from './ServicesComponent';
 import Contact from './ContactComponent';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
 
 class Main extends Component {
     render() {

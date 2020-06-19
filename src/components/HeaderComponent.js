@@ -1,24 +1,28 @@
 import React, { Component }  from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Navbar, NavbarBrand, Collapse, NavbarToggler } from 'reactstrap';
 import '../fonts/GreatVibes-Regular.ttf';
 import '../fonts/LexendTera-Regular.ttf';
 
 class Header extends Component {
+    constructor(props){
+        super(props);
+        this.toggleNav = this.toggleNav.bind(this);
+        this.state = {
+          isNavOpen: false
+        };
+    }
+    toggleNav() {
+        this.setState({
+            isNavOpen: !this.state.isNavOpen
+        });
+    }
     render() {
         return (
             <React.Fragment>
-                {/* <Jumbotron fluid>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <h1>Three Sisters Event Co</h1>
-                                <h2>less stress. more fun</h2>
-                            </div>
-                        </div>
-                    </div>
-                </Jumbotron> */}
-                <Navbar dark sticky="top">
+                <Navbar dark sticky="top" expand="md">
+                <NavbarToggler onClick={this.toggleNav} />
+        <Collapse isOpen={this.state.isNavOpen} navbar>
                     <div className="container">
                         <NavbarBrand classname="font" href="/"><h1>Three Sisters Event Co</h1></NavbarBrand>
                     <Link to="About">
@@ -34,6 +38,7 @@ class Header extends Component {
                         <li>Contact</li>
                     </Link>
                     </div>
+                    </Collapse>
                 </Navbar>
                 
             </React.Fragment>

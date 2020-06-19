@@ -7,11 +7,15 @@ class Contact extends Component {
             <div className="contact FadeItems">
                 <Container>
                 <Row >
-                <Col  >
+                <Col sm={6} className='Form'>
                 <Form>
                     <FormGroup>
                         <Label for="name">Name</Label>
                         <Input type="name" name="name" id="name" />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="phoneNumber">Phone Number</Label>
+                        <Input type="phoneNumber" name="phoneNumber" id="phoneNumber" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="eventType">What's the Occassion?</Label>
@@ -25,6 +29,10 @@ class Contact extends Component {
                             <option>Social Media</option>
                             <option>Internet Search</option>
                         </Input>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="additionalInfo">Anything else we should know?</Label>
+                        <Input type="textarea" name="additionalInfo" id="additionalInfo" />
                     </FormGroup>
                 </Form>
                 </Col>

@@ -24,7 +24,7 @@ function Footer(props) {
                             <Col style={{ textAlign: 'center', paddingTop: 10, color: 'green' }}>
                             <div className="col" >
                                     <a role="button" className="btn" href="tel:+12065551234"> 1-206-555-1234</a><br />
-                                    <a role="button" className="btn" href="mailto:fakeemail@fakeemail.co"> email@lindsaypdesigns.com</a>
+                                    <a role="button" className="btn" href="mailto:fakeemail@fakeemail.co"> email@threesisterseventco.com</a>
                                 </div>
 
                             </Col>

@@ -41,7 +41,7 @@ li{
   margin-top: 70px;
   padding:10px;
   background-color: white;
-  opacity:0.8;
+  opacity:0.9;
   font-family: 'LexendTera';
   align-items: center;
 }
@@ -50,7 +50,7 @@ li{
   background-image: url('./images/cakephoto.jpg');
   background-attachment: fixed;
   width: 100%;
-  height: 600px; 
+  height: 900px;
 }
 
 .contact{
@@ -126,6 +126,7 @@ li{
 .reviews {
   margin: auto;
   margin-top: 30px;
+  margin-bottom: 15px;
   font-family: 'Great Vibes';
   align-items: center;
   border:rgb(116, 138, 128) 5px;
@@ -157,7 +158,7 @@ li{
   background-color: white;
   opacity: 0.6;
   font-family: 'Great Vibes';
-  padding: 30px;
+  padding: 5px;
 }
 
 .reviewScroll p {

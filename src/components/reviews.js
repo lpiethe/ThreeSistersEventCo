@@ -31,7 +31,7 @@ const Review = () => {
 
     return (
         <div className='reviewScroll'>
-            <h2>What Our Clients Have to Say</h2>
+            <h3>What Our Clients Have to Say</h3>
             <p>{current.review}</p>
             <p>{current.client}</p>
             <div className='reviewScroll2'>
@@ -43,6 +43,7 @@ const Review = () => {
                     />
                 ))}
             </div>
+            
         </div>
     )
 }

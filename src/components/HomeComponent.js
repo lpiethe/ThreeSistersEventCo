@@ -8,10 +8,34 @@ import {
     Col,
     Container,
     Row,
+    Button,
+    Modal,
+    ModalHeader,
+    Label,
+    Input,
+    FormGroup,
+    ModalBody,
+    Form
 } from 'reactstrap';
+import BeautyStars from 'beauty-stars';
 import Review from './reviews.js';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isModalOpen: false,
+            value: 0
+        };
+        this.toggleModal = this.toggleModal.bind(this);
+    }
+
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        });
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -36,7 +60,37 @@ class Home extends Component {
                             <Col sm={8} className='reviews' width='60px' height='60px'>
                                 
                                 <Review />
-                               
+                           
+                                <Button onClick={this.toggleModal}>Leave a Review</Button>
+
+                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal} style={{fontFamily:'Great Vibes'}}>How did we do?</ModalHeader>
+                    <ModalBody>
+                    <Form onSubmit={this.handleLogin} style = {{fontFamily:'LexendTera'}}>
+                            <FormGroup>
+                                <Label htmlFor="clientname">Client Name</Label>
+                                <Input type="text" id="clientname" name="clientname"
+                                    innerRef={input => this.clientname = input} />
+                            </FormGroup>
+                             <FormGroup>
+                            <Label htmlFor="rating">Rating</Label>
+                            <Input type="select" name="rating" id="rating" placeholder="rating">
+                            <option>SELECT</option>
+                            <option>5</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </Input>
+                            </FormGroup>
+                            <FormGroup>
+                        <Label for="additionalComments">Additional Comments</Label>
+                        <Input type="textarea" name="additionalComments" id="additionalComments" />
+                    </FormGroup>
+                            <Button type="submit" value="submit" color="dark">Submit Review</Button>
+                        </Form>
+                    </ModalBody>
+                </Modal>
                             </Col>
                         </Row>
                     </Container>
